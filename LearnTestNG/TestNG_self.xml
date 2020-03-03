@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="test">
+    
+    <test name="runAll">
+        
+        <classes>
+            <class name="com.testng.series.TestGroup"/>
+            </classes>      
+        </test>
+        
+    <test name="runOnly">
+        <groups>
+            <run>
+                <include name="Cat"/>
+                </run>
+            </groups>
+        <classes>
+            <class name="com.testng.series.TestGroup"/>
+            </classes>      
+        </test>
+    
+    </suite>
