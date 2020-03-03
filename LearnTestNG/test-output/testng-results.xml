@@ -1,25 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="11" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="126" started-at="2020-03-03T05:35:52Z" finished-at="2020-03-03T05:35:52Z">
+  <suite name="test" duration-ms="290" started-at="2020-03-03T09:58:03Z" finished-at="2020-03-03T09:58:04Z">
     <groups>
+      <group name="Cat">
+        <method signature="TestGroup.test1()[pri:0, instance:com.testng.series.TestGroup@4f933fd1]" name="test1" class="com.testng.series.TestGroup"/>
+        <method signature="TestGroup.test2()[pri:0, instance:com.testng.series.TestGroup@4f933fd1]" name="test2" class="com.testng.series.TestGroup"/>
+        <method signature="TestGroup.test1()[pri:0, instance:com.testng.series.TestGroup@3532ec19]" name="test1" class="com.testng.series.TestGroup"/>
+        <method signature="TestGroup.test2()[pri:0, instance:com.testng.series.TestGroup@3532ec19]" name="test2" class="com.testng.series.TestGroup"/>
+      </group> <!-- Cat -->
+      <group name="Dog">
+        <method signature="TestGroup.test3()[pri:0, instance:com.testng.series.TestGroup@4f933fd1]" name="test3" class="com.testng.series.TestGroup"/>
+        <method signature="TestGroup.test4()[pri:0, instance:com.testng.series.TestGroup@4f933fd1]" name="test4" class="com.testng.series.TestGroup"/>
+      </group> <!-- Dog -->
     </groups>
-    <test name="Default test" duration-ms="126" started-at="2020-03-03T05:35:52Z" finished-at="2020-03-03T05:35:52Z">
-      <class name="com.testng.series.NewTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.testng.series.NewTest@2a5ca609]" name="beforeSuite" is-config="true" duration-ms="49" started-at="2020-03-03T05:35:52Z" finished-at="2020-03-03T05:35:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.testng.series.NewTest@2a5ca609]" name="test1" duration-ms="14" started-at="2020-03-03T05:35:52Z" finished-at="2020-03-03T05:35:52Z">
+    <test name="runAll" duration-ms="172" started-at="2020-03-03T09:58:03Z" finished-at="2020-03-03T09:58:04Z">
+      <class name="com.testng.series.TestGroup">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.testng.series.TestGroup@4f933fd1]" name="test1" duration-ms="23" started-at="2020-03-03T09:58:03Z" finished-at="2020-03-03T09:58:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.testng.series.NewTest@2a5ca609]" name="afterSuite" is-config="true" duration-ms="1" started-at="2020-03-03T05:35:52Z" finished-at="2020-03-03T05:35:52Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.testng.series.TestGroup@4f933fd1]" name="test2" duration-ms="3" started-at="2020-03-03T09:58:03Z" finished-at="2020-03-03T09:58:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.testng.series.NewTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.testng.series.TestGroup@4f933fd1]" name="test3" duration-ms="2" started-at="2020-03-03T09:58:03Z" finished-at="2020-03-03T09:58:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:com.testng.series.TestGroup@4f933fd1]" name="test4" duration-ms="2" started-at="2020-03-03T09:58:04Z" finished-at="2020-03-03T09:58:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+      </class> <!-- com.testng.series.TestGroup -->
+      <class name="com.testng.group.TestPay">
+        <test-method status="PASS" signature="toLogin()[pri:0, instance:com.testng.group.TestPay@548a9f61]" name="toLogin" duration-ms="2" started-at="2020-03-03T09:58:04Z" finished-at="2020-03-03T09:58:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toLogin -->
+      </class> <!-- com.testng.group.TestPay -->
+      <class name="com.testng.group.TestOrder">
+        <test-method status="PASS" signature="toLogin()[pri:0, instance:com.testng.group.TestOrder@7c16905e]" name="toLogin" duration-ms="4" started-at="2020-03-03T09:58:04Z" finished-at="2020-03-03T09:58:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toLogin -->
+      </class> <!-- com.testng.group.TestOrder -->
+      <class name="com.testng.group.TestLogin">
+        <test-method status="PASS" signature="toLogin()[pri:0, instance:com.testng.group.TestLogin@1753acfe]" name="toLogin" duration-ms="2" started-at="2020-03-03T09:58:04Z" finished-at="2020-03-03T09:58:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toLogin -->
+      </class> <!-- com.testng.group.TestLogin -->
+    </test> <!-- runAll -->
+    <test name="runOnly" duration-ms="25" started-at="2020-03-03T09:58:04Z" finished-at="2020-03-03T09:58:04Z">
+      <class name="com.testng.series.TestGroup">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.testng.series.TestGroup@3532ec19]" name="test1" duration-ms="4" started-at="2020-03-03T09:58:04Z" finished-at="2020-03-03T09:58:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.testng.series.TestGroup@3532ec19]" name="test2" duration-ms="3" started-at="2020-03-03T09:58:04Z" finished-at="2020-03-03T09:58:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- com.testng.series.TestGroup -->
+    </test> <!-- runOnly -->
+  </suite> <!-- test -->
 </testng-results>

@@ -6,6 +6,9 @@
         
         <classes>
             <class name="com.testng.series.TestGroup"/>
+            <class name="com.testng.group.TestPay"/>
+            <class name="com.testng.group.TestLogin"/>
+            <class name="com.testng.group.TestOrder"/>
             </classes>      
         </test>
         

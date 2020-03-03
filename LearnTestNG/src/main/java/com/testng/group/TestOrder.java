@@ -4,8 +4,8 @@ import org.testng.annotations.Test;
 
 public class TestOrder {
 	@Test
-	public void toLogin(){
-		System.out.println("去登录");
+	public void toOrder(){
+		System.out.println("去下单");
 	}
 
 }
