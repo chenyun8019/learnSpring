@@ -1,0 +1,119 @@
+
+[
+	{
+		"description":"模拟一个没有带参数的get请求",
+		"request":{
+			"uri":"/demo",
+			"method":"get"
+    	},
+		"response":{
+ 			"text":"无模拟参数"
+		}
+	},
+	
+	{
+		"description":"模拟带参数的get请求",
+		"request":{
+			"uri":"/getdemo1",
+			"method":"get",
+			"queries":{
+				"name":"chenyun",
+				"age":"17"
+			}
+		},
+ 		"response":{
+			"text":"qwerqwerqerqwer"
+		}
+	},
+	
+	{
+		"description":"练习无参数的get请求",
+		"request":{
+			"uri":"/get1",
+			"method":"get",
+			"cookies":{
+				"login":"t"
+			}
+		},
+		"response":{
+			"text":"77987878"
+		}
+	},
+	
+	{
+		"description":"练习有参数的get请求",
+		"request":{
+			"uri":"/get2",
+			"method":"get",
+			"queries":{
+			"name":"cy",
+			"age":"12"
+			}
+		},
+		"response":{
+			"text":"523452345345"
+		}
+	},
+	
+	{
+		"description":"模拟不带参数的post请求",
+		"request":{
+			"uri":"/post1",
+			"method":"post"
+		},
+		"response":{
+			"text":"this is the first post request"
+		}
+	},
+	
+	{
+	
+		"description":"模拟带参数的post请求",
+		"request":{
+			"uri":"/post2",
+			"method":"post"	,
+			"forms":{
+				"name":"cy",
+				"sex":"man"
+			}
+		},
+			"response":{
+				"text":"this is the second post request"
+		}	
+	},
+	
+	{
+	
+		"description":"模拟带参数的post请求",
+		"request":{
+			"uri":"/post3",
+			"method":"post"	,
+			"cookies":
+			{
+				"login":"t"
+			},
+			"json":{
+				"name":"cy",
+				"sex":"man"
+			},
+			"headers":{
+				"content-type":"application/json"
+			}
+		},
+		"response":{
+			"status":200,
+			"json":{
+				"name":"cu",
+				"age":"3"
+			}
+		}	
+	},
+	
+	{
+		"description":"重定向",
+		"request":{
+			"uri":"/get123"
+		},
+		"redirectTo":"https://www.baidu.com/"
+	}
+]

@@ -1,0 +1,45 @@
+
+[
+	{
+		"description":"不带参数的get请求",
+		"request":{
+			"uri":"/getwithoutpara",
+			"method":"get",
+			"cookies":{
+			"login":"ture"
+			}
+		},
+		"response":{
+			"cookies":{
+			"sex":"man",
+			"status":"1000"
+			},
+			"text":"this is a no para request"
+		}
+	},
+	
+	{
+		"description":"带参数的get请求",
+		"request":{
+			"uri":"/getwithpara",
+			"method":"get",
+			"queries":{
+			"age":"12",
+			"ad":"hunan"
+			}
+		},
+		"response":{
+			"cookies":{
+			"login":"ture"
+			},
+			"text":"this is a with para request"
+		}
+	}
+
+
+
+
+
+
+
+]
