@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 import org.apache.http.HttpResponse;
+import org.apache.http.StatusLine;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.HttpClient;
@@ -55,8 +56,11 @@ public class withCookieVistRequest {
 		hc.setCookieStore(this.cs);
 		HttpResponse response=hc.execute(get);
 		res=EntityUtils.toString(response.getEntity(),"utf-8");
+		//获取response中的状态码
+		int res1=response.getStatusLine().getStatusCode();
 		
 		System.out.println(res);
+		System.out.println(res1);
 		
 //		this.cs=hc.getCookieStore();
 //		List<Cookie> listCookie=cs.getCookies();
