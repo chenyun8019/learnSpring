@@ -15,6 +15,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -68,6 +69,15 @@ public class TestPost {
 		
 		res=EntityUtils.toString(rs.getEntity(),"utf-8");
 		System.out.println(res);
+		
+		//响应结果判断
+		JSONObject js=new JSONObject(res);
+		String name=(String) js.get("name");
+		System.out.println(name);
+		String age=(String) js.get("age");
+		System.out.println(age);
+		Assert.assertEquals("chenyun", name);
+		Assert.assertEquals("31", age);
 		
 		
 		
